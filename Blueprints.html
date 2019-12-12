@@ -25,11 +25,44 @@
 
 <body id="page-top">
 
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav" style="Background-color: #129D69">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+	<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#introduction">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#overview">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#chase">Chase Player</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#cant">Can't see player</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#investigate">Investigate</a>
+        </li>
+	<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#search">Searching</a>
+        </li>
+	<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#patrol">Patrolling</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container-fluid p-0">
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="introduction">
       <div class="w-100">
         <h2 class="mb-5">AI Blueprints in UE4</h2>
 		
@@ -40,40 +73,123 @@
 			<h3 class="mb-0">Behaviour Tree</h3>
 			<div class="subheading mb-3">Below are a collection of pictures that show the behaviour tree of the zombies AI in my game. AI in video games is always something that I have found interesting and because of that I really enjoyed implementing this AI into my game.</div>
 			<a href="index.html">Link back to my portfolio</a>
-			<p>As the game is still a work in progress I haven't managed to create a full level but I have implements the gun firing and an AI for the zombies. All assests were provide by Virtus Learning Hub's website and I used some of his tutorials to help me with some of the blueprints. Click the link above for examples and more detail on how I made the blueprints for the AI.</p>
-			
-			<div class="slide-container">
-				<span id="slider-image-1"</span>
-				<span id="slider-image-2"</span>
-				<span id="slider-image-3"</span>
-				<span id="slider-image-4"</span>
-				<span id="slider-image-5"</span>
-				<span id="slider-image-6"</span>
-				<div class="image-container">
-					<img src="img/Overview.png" class="slider-image" alt="">
-					<img src="img/Chase Player.png" class="slider-image" alt="">
-					<img src="img/Can't see player overview.png" class="slider-image" alt="">
-					<img src="img/Investigate.png" class="slider-image" alt="">
-					<img src="img/Searching.png" class="slider-image" alt="">
-					<img src="img/Patrol.png" class="slider-image" alt="">
-				</div>
-				<div class="button-container">
-					<a href="#slider-image-1" class="slider-button"></a>
-					<a href="#slider-image-2" class="slider-button"></a>
-					<a href="#slider-image-3" class="slider-button"></a>
-					<a href="#slider-image-4" class="slider-button"></a>
-					<a href="#slider-image-5" class="slider-button"></a>
-					<a href="#slider-image-6" class="slider-button"></a>
-				</div>
-			</div>
+			<p> This page shows the behaviour tree that I have used for the AI of the zombie. I plan to work on this in the future to change the tree for different types of zombies.
+Use the side panel to click through the different parts that make up the tree.</p>
+</section>	
 
+	<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="overview">
+      	<div class="w-100">		
+	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+           <div class="subheading mb-3">Overview of the behaviour tree</div>
+	<img src="img/Overview.png" width="800" height="600"></img>
+	<p>The behaviour tree for the zombie AI uses a collection of different decorators and services in order to set the state for the zombie.
+ A any one time the zombie could be in one of these states: Chasing the player, Investigating, Searching or Patrolling.</p>
+
+          </div>
+        </div>
 
 
 		  
           </div>
         </div>
+</div>
+</section>
 
-    </section>
+</section>	
+
+	<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="chase">
+      	<div class="w-100">		
+	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+           <div class="subheading mb-3">Chase Player</div>
+	<img src="img/Chase Player.png" width="800" height="600"></img>
+	<p>This part of the tree uses a decorator to check whether the zombie can see the player. This is done using the sight perception to create a field of view for the zombie.
+If the zombie can see the player then it will find the player's location and run the custom task: "ChasePlayer" which just moves to the player location using the A* algorithm to find the quickest route. 
+This task is run parallel to the MeleeAttack task runs the attack animation for the zombie. However this is only run when the player is in range of the melee attack.
+Services are used here to check if the player is wiythin range for the zombie and to speed up the zombie to indicate that it is chasing the player.</p>
+
+          </div>
+        </div>
+
+
+		  
+          </div>
+        </div>
+</div>
+</section>
+
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="cant">
+      	<div class="w-100">		
+	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+           <div class="subheading mb-3">When the AI can't see the player</div>
+	<img src="img/Can't see player overview.png" width="800" height="600"></img>
+	<p>This side of the tree is run when the zombie can not see the player. 
+It runs 3 separate states: Investigating, Searching and Patrolling.</p>
+
+          </div>
+        </div>
+
+
+		  
+          </div>
+        </div>
+</div>
+</section>
+    
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="investigate">
+      	<div class="w-100">		
+	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+           <div class="subheading mb-3">Investigate</div>
+	<img src="img/Investigate.png" width="800" height="600"></img>
+	<p>This part of the tree is called when the zombie can not see the player. 
+It is called first and has the zombie go to where the last known position of the player was before it lost sight. 
+</p>
+
+          </div>
+        </div>
+</div>
+        </div>
+</div>
+</section>
+
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="search">
+      	<div class="w-100">		
+	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+           <div class="subheading mb-3">Searching</div>
+	<img src="img/Searching.png" width="800" height="600"></img>
+	<p>The searching for the zombie just consists of the zombie finding a random location and moving to it. 
+This is looped 3 times and if the zombie hasn't found the player then it will enter the patrolling status.</p>
+
+          </div>
+        </div>
+
+		  
+          </div>
+        </div>
+</div>
+</section>
+
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="patrol">
+      	<div class="w-100">		
+	<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+           <div class="subheading mb-3">Patrolling</div>
+	<img src="img/Patrol.png" width="800" height="600"></img>
+	<p>This is the final part of the tree that deals with the patrolling of the zombie. 
+The service here is used to slow the zombie to a walking pace. The zombie will them follow a path of predetermined points in go back and forth until the player enters it's view again.</p>
+
+          </div>
+        </div>
+
+		  
+          </div>
+        </div>
+</div>
+</section>
 	
   </div>
 
