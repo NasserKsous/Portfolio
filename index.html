@@ -41,7 +41,10 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#work">Work Experience</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
@@ -78,7 +81,7 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
       <div class="w-100">
         <h2 class="mb-5">My Projects</h2>
 		
@@ -173,6 +176,52 @@
     </section>
 
     <hr class="m-0">
+	
+	    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="work">
+      <div class="w-100">
+        <h2 class="mb-5">Work Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Software Programmer at Airbus Helicopters Donauwörth (Internship)</h3>
+            <div class="subheading mb-3">Overview</div>
+			<p>As part of my placement year, my 3rd year at University, I worked for Airbus Helicopters as a software programmer for the research and development (RnD) team.
+			For me this was a new experience as my first time working in full time job and as my first time working and living abroad.
+			I have learnt a lot whilst working at Airbus and worked on a few projects that were very interesting to me:
+			</p>
+			
+			<div class="subheading mb-3">Creating Synthetic Data for use as a dataset for a neural network</div>
+			<p>The majority of the projects I worked on as part of the RnD team involved artificial intelligence. 
+			This project required a dataset of images/videos of a selection of objects in a scene for a neural network on object detection.
+			The dataset needed was not available open source or was not easy to collect naturally so the dataset needed to be produced synthetically.
+			In order to do this, I used Unigine which is an engine used by Airbus Helicopters for the simulation of the helicopters.
+			I had to consider the different possible scenarios in which these objects may appear in the real world.
+			My part of this project was to provide a way for the user to add/remove/modify weather conditions to the scene in real time.
+			</p>
+			<p>I created 2 classes for this: a UserInterface class and a Weather class.
+			The user interface class set up the GUI for the user to add/remove/modify weather nodes.
+			To add weather nodes to the scene, an add weather button is present and once clicked will open a file dialog in which the user can select a node to be added to the scene.
+			Once a node is choosen, the node parameters window is shown to modify the parameters of the weather node for use to show different weather conditions.
+			The node parameters window is created using an external xml to define the text boxes and buttons to produce a custom GUI.
+			I created a combo box for the user to selected any of the nodes present in the scene to be modified or deleted. 
+			If a node is selected and the edit button is clicked then the node parameters window is shown and once confirmed, the parameters of the selected node are updated.
+			If a node is selected and the delete button is clicked then the node is remove from the scene and removed from the combo box.
+			</p>
+			<p>The Weather class handled the adding, removing and editting of weather nodes.
+			The weather nodes used the node parameters window of the UserInterface class to set and modify parameters such as position, scale, spawn rate and number of particles per spawn.
+			
+			</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2020 - July 2021</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
