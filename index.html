@@ -185,20 +185,23 @@
           <div class="resume-content">
             <h3 class="mb-0">Software Programmer at Airbus Helicopters Donauwörth (Internship)</h3>
             <div class="subheading mb-3">Overview</div>
-			<p>As part of my placement year, my 3rd year at University, I worked for Airbus Helicopters as a software programmer for the research and development (RnD) team.
+			<p>
+			As part of my placement year, my 3rd year at University, I worked for Airbus Helicopters as a software programmer for the research and development (RnD) team.
 			For me this was a new experience as my first time working in full time job and as my first time working and living abroad.
 			I have learnt a lot whilst working at Airbus and worked on a few projects that were very interesting to me:
 			</p>
 			
 			<div class="subheading mb-3">Creating Synthetic Data for use as a dataset for a neural network</div>
-			<p>The majority of the projects I worked on as part of the RnD team involved artificial intelligence. 
+			<p>
+			The majority of the projects I worked on as part of the RnD team involved artificial intelligence. 
 			This project required a dataset of images/videos of a selection of objects in a scene for a neural network on object detection.
 			The dataset needed was not available open source or was not easy to collect naturally so the dataset needed to be produced synthetically.
 			In order to do this, I used Unigine which is an engine used by Airbus Helicopters for the simulation of the helicopters.
 			I had to consider the different possible scenarios in which these objects may appear in the real world.
 			My part of this project was to provide a way for the user to add/remove/modify weather conditions to the scene in real time.
 			</p>
-			<p>I created 2 classes for this: a UserInterface class and a Weather class.
+			<p>
+			I created 2 classes for this: a UserInterface class and a Weather class.
 			The user interface class set up the GUI for the user to add/remove/modify weather nodes.
 			To add weather nodes to the scene, an add weather button is present and once clicked will open a file dialog in which the user can select a node to be added to the scene.
 			Once a node is choosen, the node parameters window is shown to modify the parameters of the weather node for use to show different weather conditions.
@@ -206,10 +209,21 @@
 			I created a combo box for the user to selected any of the nodes present in the scene to be modified or deleted. 
 			If a node is selected and the edit button is clicked then the node parameters window is shown and once confirmed, the parameters of the selected node are updated.
 			If a node is selected and the delete button is clicked then the node is remove from the scene and removed from the combo box.
-			</p>
-			<p>The Weather class handled the adding, removing and editting of weather nodes.
+			The Weather class handled the adding, removing and editting of weather nodes.
 			The weather nodes used the node parameters window of the UserInterface class to set and modify parameters such as position, scale, spawn rate and number of particles per spawn.
+			</p>
 			
+			<div class="subheading mb-3">Neural network library for embedded systems</div>
+			<p>
+			Another project I worked on was the creation and implementation of a neural network library in C code.
+			It was a project that was started by my mentor and my job was to build upon it and automate a pipeline to convert models trained using Tensorflow into C code.
+			Firstly, I had to add more activation functions to the library and then add unit testing to check that every aspect of the library worked as intended.
+			Then the next step was to automate the process of creating and training a library using Tensorflow, converting that model using jinja into C code and finally unit testing the created model with the library.
+			</p>
+			<p>
+			In order to do all of this, I had to understand every part of the pipeline that was started by my mentor. 
+			This meant that I had to learn C code to understand the library, learn python and tensorflow for the creation of the model and learn how to automate this process in a Linux environment.
+			On top of this, I learnt how to automate the process using git and jenkins so that a trained model can be exported.
 			</p>
           </div>
           <div class="resume-date text-md-right">
@@ -278,27 +292,54 @@
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            C++</li>
-          <li>
-		    <i class="fa-li fa fa-check"></i>
-            C#</li>
-		  <li>
-		    <i class="fa-li fa fa-check"></i>
-            C</li>
-          <li>
-			<i class="fa-li fa fa-check"></i>
-            Python</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            DirectX</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            SDL</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Unreal Engine 4</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				C++
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				C#
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				C
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				Python
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				DirectX
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				SDL
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				Unreal Engine 4
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				Unigine
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				Vagrant
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				Ansible
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				Jenkins
+			</li>
+			<li>
+				<i class="fa-li fa fa-check"></i>
+				Shell scripting
+			</li>
         </ul>
       </div>
     </section>
