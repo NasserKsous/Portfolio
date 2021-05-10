@@ -186,14 +186,13 @@
             <h3 class="mb-0">Software Programmer at Airbus Helicopters Donauwörth (Internship)</h3>
             <div class="subheading mb-3">Overview</div>
 			<p>
-			As part of my placement year, my 3rd year at University, I worked for Airbus Helicopters as a software programmer for the research and development (RnD) team.
+			As part of my placement year, my 3rd year at University, I worked for Airbus Helicopters as a software programmer.
 			For me this was a new experience as my first time working in full time job and as my first time working and living abroad.
 			I have learnt a lot whilst working at Airbus and worked on a few projects that were very interesting to me:
 			</p>
 			
 			<div class="subheading mb-3">Creating Synthetic Data for use as a dataset for a neural network</div>
 			<p>
-			The majority of the projects I worked on as part of the RnD team involved artificial intelligence. 
 			This project required a dataset of images/videos of a selection of objects in a scene for a neural network on object detection.
 			The dataset needed was not available open source or was not easy to collect naturally so the dataset needed to be produced synthetically.
 			In order to do this, I used Unigine which is an engine used by Airbus Helicopters for the simulation of the helicopters.
@@ -224,6 +223,19 @@
 			In order to do all of this, I had to understand every part of the pipeline that was started by my mentor. 
 			This meant that I had to learn C code to understand the library, learn python and tensorflow for the creation of the model and learn how to automate this process in a Linux environment.
 			On top of this, I learnt how to automate the process using git and jenkins so that a trained model can be exported.
+			</p>
+			
+			<div class="subheading mb-3">Creating a virtual software development environment</div>
+			<p>
+			I worked on a different project that needed a development environment to be created and reproduced so that the software developers can all be working in the same environment.
+			The environemnt needed to be set up in a way that can be used for a variety of projects.
+			In order to do this we used packer, vagrant and ansible to create the virtual machine to be used by the developers.
+			Packer was used to create a basebox file which has the debian iso and a very basic configuration for the virtual machine.
+			This basebox file is then invoked by vagrant to build the virtual box and ansible is used to install the software onto that virtual box.
+			</p>
+			<p>
+			My job was to work on the vagrant and ansible side on this project.
+			
 			</p>
           </div>
           <div class="resume-date text-md-right">
@@ -338,7 +350,7 @@
 			</li>
 			<li>
 				<i class="fa-li fa fa-check"></i>
-				Shell scripting
+				Linux Shell scripting
 			</li>
         </ul>
       </div>
