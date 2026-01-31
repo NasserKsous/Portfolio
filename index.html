@@ -101,8 +101,9 @@
 						
 						<div class="subheading mb-3">Tightrope Walking</div>
 						<p>
-						Tightrope Walking was introduced in Season 12 and was my first major feature that I worked on. 
-						This was a feature that was started by a previous seasonal team but only made it into the prototype stage.
+							Tightrope Walking was introduced in Season 12 and was my first major feature that I worked on. 
+							This was a feature that was started by a previous seasonal team but only made it into the prototype stage before it was shelved.
+							Therefore, my resposiblity was to take this prototype and use it as starting point to implement the Tightrope Walking in a more polished way using the updated design.
 						</p>
 						<p>
 						Major difficulties included server/client syncing and animation hookups
@@ -153,19 +154,20 @@
 							</ul>
 						</p>
 						
-						<div class="subheading mb-3">Creating a virtual software development environment</div>
+						<div class="subheading mb-3">Improving the Hit Registration for projectile weapons</div>
 						<p>
-						I worked on a different project that needed a development environment to be created and reproduced so that the software developers can all be working in the same environment.
-						The environemnt needed to be set up in a way that can be used for a variety of projects.
-						In order to do this we used packer, vagrant and ansible to create the virtual machine to be used by the developers.
-						Packer was used to create a basebox file which has the debian iso and a very basic configuration for the virtual machine.
-						This basebox file is then invoked by vagrant to build the virtual box and ansible is used to install the software onto that virtual box.
+							Hit Registration (HitReg) is an issue that all games that involve shooting deal with and it's never an easy one to solve/improve.
+							Sea of Thieves has had poor HitReg but it was highlighted more when the Hourglass mode was introduced in Season 9.
+							This mode added a competitive PvP aspect to the game and as a result, elements of the game such as HitReg were highlighted as not being up to the same standard as other competitive games.
+							I worked on improving HitReg alongside a Principal Programmer at Lucid Games and our task was to monitor the current state and try to improve the HitReg as much as possible.
 						</p>
 						<p>
-						My job was to work on the vagrant and ansible side on this project.
-						Vagrant is written in Ruby and is used to invoked the ansible playbook and to pass in the variables that will be needed.
-						For example, the users' details are needed to set up the proxy on the virtual machine.
-						The ansible playbook works on installing the software needed such as the IDE, proxy and pip modules.
+							The first task we had was to monitor the current state of the HitReg using verifiable data alongside the existing sentiment from the playerbase.
+							This verifiable data didn't currently exist so we added some telemetry to measure the number/percentage of client/server agreements and disagreements.
+							We added the telemetry in a way to be able to get a baseline of the HitReg in the most common situation in Sea of Thieves.
+							When we were happy with the telemetry we setup, it got pushed into the Retail version of the game which gave us a huge amount of data to look out to identify the worst scenarios and where we should be focusing on to give the biggest improvement to HitReg.
+
+
 						</p>
 					
 						<p>
