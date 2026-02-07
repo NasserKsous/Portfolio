@@ -101,12 +101,28 @@
 						
 						<div class="subheading mb-3">Tightrope Walking</div>
 						<p>
-							Tightrope Walking was introduced in Season 12 and was my first major feature that I worked on. 
+							Tightrope Walking was introduced in Season 12 and was my first major feature that I worked on.
+							Tightrope Walking is a feature that enables the player to jump on a harpoon line and they can traverse along the harpoon line as long as they can stay on.
+							In order to stay on the line, the player will need to balance but if the player can master this minigame then this opens up a multitude of ways they can use this method to traverse on and off their ship.
 							This was a feature that was started by a previous seasonal team but only made it into the prototype stage before it was shelved.
 							Therefore, my resposiblity was to take this prototype and use it as starting point to implement the Tightrope Walking in a more polished way using the updated design.
 						</p>
 						<p>
-						Major difficulties included server/client syncing and animation hookups
+							The first priority I had when working on the tightrope was to work closely with the designer to get a good feel for the balancing minigame that the player will need to do to stay on the tightrope.
+							This took a lot of iteration and collaboration with the designer to get this feeling good to play but once that was done I could focus on implementing the animations which would help to get the feeling of the minigame to be perfect.
+							Work with animations in Unreal Engine was something that was new to me at the time so this took a bit of time to get correct.
+							I worked with a couple animators to figure out what they were looking for in terms of a setup for them to plug in their animations.
+							I utilized a mixture of blendspaces and anim sequences due to the different ways a player could use the tightrope.
+							The blendspace was used for when the player was walking/running on the tightrope and it would blend between the speed of the player and how close the player was to falling off the tightrope.
+							The anim sequences were used for when the player was sliding down the tightrope.
+							Once the animations were sorted, I focused on the final major issues which was that there was a large desync between the server and client positions and orientations of the player on the tightrope.
+							This issue meant that there would times where the player would fall off the tightrope when it didn't look like they were about to fall off and vice-versa.
+							The difficult came from the fact that the balancing needed to feel smooth for the client so it had to be client predicted but then the server would need to correct it when the client and server orientations and positions varied too much.
+
+
+						</p>
+						<p>
+							Whilst working on the tightrope walking, I learnt how to work with other diciplines and how to get the solve client/server desync issues without compramising how the balancing felt for the player.
 						</p>
 						<br>
 						<br>
@@ -141,7 +157,7 @@
 						<br>
 						<br>
 						<p>
-						Skills I learnt whilst working on this project:
+						Skills I learnt whilst working on this feature:
 							<ul class="fa-ul mb-0">
 								<li>
 									<i class="fa-li fa fa-check"></i>
@@ -149,7 +165,7 @@
 								</li>
 								<li>
 									<i class="fa-li fa fa-check"></i>
-									Not to add crouching 
+									AI Perception
 								</li>
 							</ul>
 						</p>
@@ -164,26 +180,31 @@
 						<p>
 							The first task we had was to monitor the current state of the HitReg using verifiable data alongside the existing sentiment from the playerbase.
 							This verifiable data didn't currently exist so we added some telemetry to measure the number/percentage of client/server agreements and disagreements.
-							We added the telemetry in a way to be able to get a baseline of the HitReg in the most common situation in Sea of Thieves.
+							We added the telemetry in a way to be able to get a baseline of the HitReg in the most common situations in Sea of Thieves.
 							When we were happy with the telemetry we setup, it got pushed into the Retail version of the game which gave us a huge amount of data to look out to identify the worst scenarios and where we should be focusing on to give the biggest improvement to HitReg.
-
-
+							Once we got back the data, we were able to highlight the areas we wanted to improve and once we had made changes that were speculative, we could push that to Retail.
+							We made a lot of changes that were hard to verify internally whether it had improved the HitReg so we were able to use the telemetry to confirm if these changes had made an improvement or not.
+							Another job I had was to take the clips of streamers who had periods of noticably bad HitReg on stream and dig into the telemetry data to find the clip in our data to get an idea of what caused the HitReg to be considerably bad in that clip.
+							These clips were really helpful to look at because if we were able to reduce the amount of times the HitReg can get noticibly worse then this would help with the negative sentiment that would come from these streamers.
+							
 						</p>
-					
 						<p>
-						Skills I learnt whilst working on this project:
+							In summary, a lot of the work I did to help improve the HitReg is Sea of Thieves was creating and analysing the telemetry data alongside supporting the Principal Programmer with some of the fixes.
+						</p>
+						<p>
+						Skills I learnt whilst working on this feature:
 						<ul class="fa-ul mb-0">
 							<li>
 								<i class="fa-li fa fa-check"></i>
-								Vagrant
+								Telemetry/Data Analysis
 							</li>
 							<li>
 								<i class="fa-li fa fa-check"></i>
-								Ansible
+								Projectile Code
 							</li>
 							<li>
 								<i class="fa-li fa fa-check"></i>
-								Linux scripting 
+								Server and Client Relationships in Unreal Engine 
 							</li>
 						</ul>
 						</p>
