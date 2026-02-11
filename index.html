@@ -64,11 +64,11 @@
 			</h1>
 			<div class="subheading mb-5">
 			<!--	 //-->
-			<a><font color=#129D69>This is where my email would go.</font></a>
+			<a href="mailto:nasserksous@gmail.com"><font color=#129D69>nasserksous@gmail.com</font></a>
 			</div>
-			<p class="lead mb-5">I am a Games Programmer currently employed at Lucid Games. I have a particular interest in artificial intelligence.
-			In my spare time I like to play video games with my friends and if I want to relax on my own, I might play some single player games such as Pokemon or Horizon Forbidden West.
-			And outside of gaming, I enjoy going climbing, swimming and pilates.
+			<p class="lead mb-5">I am a Games Programmer currently employed at Lucid Games.
+			In my spare time I like to play video games with my friends and if I want to relax on my own, I might play some chill games such as Pokemon or Stardew Valley.
+			Outside of gaming, I enjoy going out to gigs and to stay active I like to go climbing, swimming and pilates.
 			</p>
 			<div class="social-icons">
 			<!--
@@ -92,37 +92,43 @@
 						<h3 class="mb-0">Gameplay Programmer at Lucid Games (Working on Sea of Thieves)</h3>
 						<div class="subheading mb-3">Overview</div>
 						<p>
-							I was very lucky to get a job straight out of university for Lucid Games and even luckier to work on a co-dev project with Rare on Sea of Thieves.
-							For the first 2 and half years on the project I was working on the seasonal team delivering new content, QoL changes and fixes over multiple seasons.
-							Throughout this period I worked on a wide range of features and collaborated across multiple disciplines such as animation, audio, VFX and UI.
-							Some of the features I worked on during this time were the Tightrope Walking, Crouching and improving Hit Registration for all projectile weapons.
-							After this 2 and half year period I was moved onto the Game Health team which focused on fixing long standing issues and improving old features.
+							I was very lucky to get a job straight out of university for Lucid Games and even luckier to work on a co-dev project with Rare on Sea of Thieves. 
+							For the first 2 and a half years on the project, I was working on the seasonal team delivering new content, QoL changes and fixes over multiple seasons. 
+							Throughout this period, I worked on a wide range of features and collaborated across multiple disciplines such as animation, audio, VFX and UI. 
+							Some of the features I worked on during this time were the Tightrope Walking, Crouching and improving Hit Registration for all projectile weapons. 
+							After this 2 and half year period, I was moved onto the Game Health team which focused on fixing long-standing issues and improving old features.
 						</p>
+
+						<p>
+							During my time of the seasonal team I implemented the following features: Red Sea Loot Relocation, Harpoon Auto Drop Loot, Repairing Rowboats, Inventory Persistence, Aim Assist, Scattershot and Tiny Creatures
+							And helped/supported on the following features: Traps, Blowpipe, Mimic Dart and Hunting Spear and Boars
+							On the Game Health team I implemented the Hourglass Requeuing and Tracking of crews that are in PvP and Migrating Crews the repeatedly sank to the same crew whilst also helping with the implemention of Resticting ineligible players from joining Hourglass.
+							I also looked at and helped fix to the water desync issue which was a long standing issues that caused the player to floating out of sync with the waves in Sea of Thieves.    
+						</p>
+						<br>
 						
 						<div class="subheading mb-3">Tightrope Walking</div>
 						<p>
-							Tightrope Walking was introduced in Season 12 and was my first major feature that I worked on.
-							Tightrope Walking is a feature that enables the player to jump on a harpoon line and they can traverse along the harpoon line as long as they can stay on.
-							In order to stay on the line, the player will need to balance but if the player can master this minigame then this opens up a multitude of ways they can use this method to traverse on and off their ship.
-							This was a feature that was started by a previous seasonal team but only made it into the prototype stage before it was shelved.
-							Therefore, my resposiblity was to take this prototype and use it as starting point to implement the Tightrope Walking in a more polished way using the updated design.
+							Tightrope Walking was introduced in Season 12 and was the first major feature that I worked on. 
+							Tightrope Walking is a feature that enables the player to jump on a harpoon line and they can traverse along the harpoon line as long as they can stay on. 
+							In order to stay on the line, the player will need to balance but if the player can master this minigame then this opens up a multitude of ways they can use this method to traverse on and off their ship. 
+							This was a feature that was started by a previous seasonal team but only made it into the prototype stage before it was shelved. 
+							Therefore, my responsibility was to take this prototype and use it as a starting point to implement the Tightrope Walking in a more polished way using the updated design.
 						</p>
 						<p>
-							The first priority I had when working on the tightrope was to work closely with the designer to get a good feel for the balancing minigame that the player will need to do to stay on the tightrope.
-							This took a lot of iteration and collaboration with the designer to get this feeling good to play but once that was done I could focus on implementing the animations which would help to get the feeling of the minigame to be perfect.
-							Work with animations in Unreal Engine was something that was new to me at the time so this took a bit of time to get correct.
-							I worked with a couple animators to figure out what they were looking for in terms of a setup for them to plug in their animations.
-							I utilized a mixture of blendspaces and anim sequences due to the different ways a player could use the tightrope.
-							The blendspace was used for when the player was walking/running on the tightrope and it would blend between the speed of the player and how close the player was to falling off the tightrope.
-							The anim sequences were used for when the player was sliding down the tightrope.
-							Once the animations were sorted, I focused on the final major issues which was that there was a large desync between the server and client positions and orientations of the player on the tightrope.
-							This issue meant that there would times where the player would fall off the tightrope when it didn't look like they were about to fall off and vice-versa.
-							The difficult came from the fact that the balancing needed to feel smooth for the client so it had to be client predicted but then the server would need to correct it when the client and server orientations and positions varied too much.
-
+							The priority I had when working on the tightrope was to work closely with the designer to get a good feel for the balancing minigame that the player will need to do to stay on the tightrope. 
+							This took a lot of iteration and collaboration with the designer to get this feeling good to play but once that was done, I could focus on implementing the animations which would help to get the feeling of the minigame to be perfect. 
+							Working with animations in Unreal Engine was something that was new to me at the time so this took a bit of time to get correct. 
+							I worked with a couple of animators to figure out what they were looking for in terms of a setup for them to plug in their animations. 
+							I utilised a mixture of blendspaces and anim sequences due to the different ways a player could use the tightrope. 
+							The blendspace was used when the player was walking/running on the tightrope and it would blend between the speed of the player and how close the player was to falling off the tightrope. 
+							The animation sequences were used when the player was sliding down the tightrope. Once the animations were sorted, I focused on the final major issues which were that there was a large desync between the server and client positions and orientations of the player on the tightrope. 
+							This issue meant that there would be times when the player would fall off the tightrope when it didn't look like they were about to fall off and vice versa. 
+							The difficulty came from the fact that the balancing needed to feel smooth for the client so it had to be client-predicted but then the server would need to correct it when the client and server orientations and positions varied too much.
 
 						</p>
 						<p>
-							Whilst working on the tightrope walking, I learnt how to work with other diciplines and how to get the solve client/server desync issues without compramising how the balancing felt for the player.
+							Whilst working on the tightrope walking, I learnt how to work with other disciplines and how to solve client/server desync issues without compromising how the balancing felt for the player.
 						</p>
 						<br>
 						<br>
@@ -138,18 +144,36 @@
 								</li>
 								<li>
 									<i class="fa-li fa fa-check"></i>
+									Audio and VFX hookups
+								</li>
+								<li>
+									<i class="fa-li fa fa-check"></i>
 									Client/Server smoothing
 								</li>
 							</ul>
 						</p>
+
+						<br>
+						<br>
 						
 						<div class="subheading mb-3">Crouching</div>
 						<p>
-							Surprisingly, it took till Season 14 for the ability to Crouch was added to the game.
-							This added a lot of challenges for me to get crouching working in a codebase with systems that weren't designed with crouching in mind.
+							Surprisingly, it took till Season 14 for the ability to crouch to be added to the game. 
+							This added a lot of challenges for me to get crouching working in a codebase with systems that weren't designed with crouching in mind. 
+							Some of the main aspects that were changed whilst crouching were reduced movement, a smaller hitbox and reduced AI perception. 
+							On top of these changes, crouching was also used alongside and was necessary to access 2 other features that were released in Season 14: Disguises and Traps.
 						</p>
 						<p>
-							This sucked hard
+							I used the knowledge I gained when working on Hit Registration to help me implement the smaller hitbox when crouching. 
+							The smaller hitbox was only for projectiles and therefore the collisions with the environment had to stay the same. 
+							This meant I had to work with the projectile and rewind systems in Sea of Thieves to be able to accurately adjust the hitbox at the precise time when the player crouched. 
+							The reduced AI perception when crouching was implemented by changing the engine code for UE4 so that the AI would have a narrower cone of vision and reduced range of hearing and seeing when trying to detect crouched players. 
+							Also design wanted the player to return to crouching whenever they mounted an object (like the cannon or wheel) if they were crouching before mounting. 
+							This one part of crouching caused many bugs and issues throughout the development and some even made it into the Retail version. Because of this, a large portion of the time I spent working on crouching was putting out fires that occurred as a result of many systems in the game that were not designed to work with crouching in mind. 
+							There were also a couple of exploits that were caused by my implementation of crouching which taught me the hard way how to write secure code that hackers can use to gain an advantage.
+						</p>
+						<p>
+							In short, crouching was a very difficult feature for me to develop but it was one that taught me a lot about how to create fundamental systems from the ground up and what to keep in mind when creating these systems.
 						</p>
 						<br>
 						<br>
@@ -161,15 +185,22 @@
 							<ul class="fa-ul mb-0">
 								<li>
 									<i class="fa-li fa fa-check"></i>
-									How to write secure code
+									UE4 Movement Systems
 								</li>
 								<li>
 									<i class="fa-li fa fa-check"></i>
 									AI Perception
 								</li>
+								<li>
+									<i class="fa-li fa fa-check"></i>
+									How to write secure code
+								</li>
 							</ul>
 						</p>
 						
+						<br>
+						<br>
+
 						<div class="subheading mb-3">Improving the Hit Registration for projectile weapons</div>
 						<p>
 							Hit Registration (HitReg) is an issue that all games that involve shooting deal with and it's never an easy one to solve/improve.
@@ -178,18 +209,17 @@
 							I worked on improving HitReg alongside a Principal Programmer at Lucid Games and our task was to monitor the current state and try to improve the HitReg as much as possible.
 						</p>
 						<p>
-							The first task we had was to monitor the current state of the HitReg using verifiable data alongside the existing sentiment from the playerbase.
-							This verifiable data didn't currently exist so we added some telemetry to measure the number/percentage of client/server agreements and disagreements.
-							We added the telemetry in a way to be able to get a baseline of the HitReg in the most common situations in Sea of Thieves.
-							When we were happy with the telemetry we setup, it got pushed into the Retail version of the game which gave us a huge amount of data to look out to identify the worst scenarios and where we should be focusing on to give the biggest improvement to HitReg.
-							Once we got back the data, we were able to highlight the areas we wanted to improve and once we had made changes that were speculative, we could push that to Retail.
-							We made a lot of changes that were hard to verify internally whether it had improved the HitReg so we were able to use the telemetry to confirm if these changes had made an improvement or not.
-							Another job I had was to take the clips of streamers who had periods of noticably bad HitReg on stream and dig into the telemetry data to find the clip in our data to get an idea of what caused the HitReg to be considerably bad in that clip.
-							These clips were really helpful to look at because if we were able to reduce the amount of times the HitReg can get noticibly worse then this would help with the negative sentiment that would come from these streamers.
-							
+							The first task we had was to monitor the current state of the HitReg using verifiable data alongside the existing sentiment from the playerbase. 
+							This verifiable data didn't currently exist so we added some telemetry to measure the number/percentage of client/server agreements and disagreements. 
+							We added the telemetry in a way to be able to get a baseline of the HitReg in the most common situations in Sea of Thieves. 
+							When we were happy with the telemetry we set up, it got pushed into the Retail version of the game which gave us a huge amount of data to look at to identify the worst scenarios and where we should be focusing on to give the biggest improvement to HitReg. 
+							Once we got back the data, we were able to highlight the areas we wanted to improve and once we had made changes that were speculative, we could push that to Retail. 
+							We made a lot of changes that were hard to verify internally whether they had improved the HitReg so we were able to use the telemetry to confirm if these changes had made an improvement or not. 
+							Another job I had was to take the clips of streamers who had periods of noticeably bad HitReg on stream and dig into the telemetry data to find the clip in our data to get an idea of what caused the HitReg to be considerably bad in that clip. 
+							These clips were really helpful to look at because if we were able to reduce the number of times the HitReg can get noticeably worse then this would help with the negative sentiment that would come from these streamers.
 						</p>
 						<p>
-							In summary, a lot of the work I did to help improve the HitReg is Sea of Thieves was creating and analysing the telemetry data alongside supporting the Principal Programmer with some of the fixes.
+							In summary, a lot of the work I did to help improve the HitReg in Sea of Thieves was creating and analysing the telemetry data alongside supporting the Principal Programmer with some of the fixes.
 						</p>
 						<p>
 						Skills I learnt whilst working on this feature:
@@ -215,6 +245,8 @@
 				</div>
 			</div>
 		</section>
+
+		<hr class="m-0">
 
 		<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="work">
 			<div class="w-100">
@@ -267,6 +299,9 @@
 							</ul>
 						</p>
 						
+						<br>
+						<br>
+
 						<div class="subheading mb-3">Neural network library for embedded systems</div>
 						<p>
 						Another project I worked on was the creation and implementation of a neural network library in C code.
@@ -307,6 +342,9 @@
 							</ul>
 						</p>
 						
+						<br>
+						<br>
+						
 						<div class="subheading mb-3">Creating a virtual software development environment</div>
 						<p>
 						I worked on a different project that needed a development environment to be created and reproduced so that the software developers can all be working in the same environment.
@@ -346,6 +384,7 @@
 				</div>
 			</div>
 		</section>
+		
 	<hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="projects">
@@ -547,6 +586,14 @@
 					</li>
 					<li>
 						<i class="fa-li fa fa-check"></i>
+						Typescript
+					</li>
+					<li>
+						<i class="fa-li fa fa-check"></i>
+						Kusto
+					</li>
+					<li>
+						<i class="fa-li fa fa-check"></i>
 						Unigine
 					</li>
 					<li>
@@ -567,7 +614,7 @@
 					</li>
 					<li>
 						<i class="fa-li fa fa-check"></i>
-						Unit testing using CUnit
+						Unit testing using CUnit and UE4
 					</li>
 				</ul>
 			<p>
@@ -591,6 +638,10 @@
 					<li>
 						<i class="fa-li fa fa-check"></i>
 						A* Pathfinding
+					</li>
+					<li>
+						<i class="fa-li fa fa-check"></i>
+						UE4 AI Perception
 					</li>
 					<li>
 						<i class="fa-li fa fa-check"></i>
